@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CSS DESIGN SYSTEM V3.1 — KIT DE PASTAS SANITÁRIAS
+   CSS DESIGN SYSTEM V3.2 — KIT DE PASTAS SANITÁRIAS
    ========================================================================== */
 
 /* Variables */
@@ -335,7 +335,7 @@ body.dark-theme .site-header.scrolled {
     max-height: 48px;
     width: auto;
     object-fit: contain;
-    transition: filter var(--transition-smooth);
+    transition: filter var(--transition-smooth), max-height var(--transition-fast);
 }
 
 body.dark-theme .logo-img-src {
@@ -383,6 +383,7 @@ body.dark-theme .moon-icon { display: none; }
     background-color: transparent;
     color: var(--color-text-primary);
     border: 1px solid var(--color-text-primary);
+    transition: all var(--transition-fast);
 }
 
 .btn-top-cta:hover {
@@ -1030,6 +1031,29 @@ body.dark-theme .solution-highlight-card {
     .features-grid { grid-template-columns: repeat(3, 1fr); margin-bottom: 48px; }
 }
 
+/* 2 columns mobile responsive design for features grid */
+@media (max-width: 575px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .feature-card {
+        padding: 16px 12px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .feature-icon-wrapper {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    .feature-card h4 {
+        font-size: 13px;
+        word-break: keep-all;
+    }
+}
+
 .feature-card {
     background-color: var(--color-bg-card);
     border-radius: var(--border-radius-md);
@@ -1114,6 +1138,29 @@ body.dark-theme .features-disclaimer {
 
 @media (min-width: 992px) {
     .target-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* 2 columns mobile responsive design for target grid */
+@media (max-width: 575px) {
+    .target-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .target-card {
+        padding: 20px 10px;
+    }
+    .target-card-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+    .target-card-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    .target-card h3 {
+        font-size: 13px;
+    }
 }
 
 .target-card {
@@ -1390,11 +1437,11 @@ body.dark-theme .photo-accent-frame {
 .testimonials-slider {
     position: relative;
     width: 100%;
-    min-height: auto; /* NO fixed heights! */
+    min-height: auto;
 }
 
 .testimonial-slide {
-    display: none; /* Hide non-active ones to completely free vertical space */
+    display: none;
     width: 100%;
     opacity: 0;
     transform: scale(0.98);
@@ -1402,7 +1449,7 @@ body.dark-theme .photo-accent-frame {
 }
 
 .testimonial-slide.active {
-    display: block; /* Render active slide in normal flow */
+    display: block;
     position: relative;
     opacity: 1;
     transform: scale(1);
@@ -2128,6 +2175,21 @@ body.dark-theme .faq-item.active {
     gap: 14px;
     max-width: 320px;
     font-family: var(--font-body);
+    transition: bottom var(--transition-smooth); /* Smooth vertical push */
+}
+
+.whatsapp-widget-container.pushed {
+    bottom: 90px;
+}
+
+@media (max-width: 767px) {
+    .whatsapp-widget-container {
+        bottom: 16px;
+        right: 16px;
+    }
+    .whatsapp-widget-container.pushed {
+        bottom: 85px; /* pushed above sticky bar */
+    }
 }
 
 /* Trigger Bubble */
@@ -2550,5 +2612,16 @@ body.dark-theme .mobile-sticky-bar {
     .section-padding {
         padding-top: 36px;
         padding-bottom: 36px;
+    }
+}
+
+/* Ultra Narrow Screens like iPhone SE 1st Gen (max-width: 400px) */
+@media (max-width: 400px) {
+    .btn-top-cta {
+        padding: 8px 14px;
+        font-size: 9px;
+    }
+    .logo-img-src {
+        max-height: 30px;
     }
 }

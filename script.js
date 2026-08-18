@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JAVASCRIPT V3 — CONFIGURATIONS & INTERACTIVE PREMIUM BEHAVIORS
+   JAVASCRIPT V3.2 — CONFIGURATIONS & INTERACTIVE PREMIUM BEHAVIORS
    ========================================================================== */
 
 // 1. CONFIGURATIONS
@@ -375,10 +375,11 @@ function setupReadingProgressBar() {
     }, { passive: true });
 }
 
-// Mobile Sticky Bar visibility on scroll
+// Mobile Sticky Bar visibility on scroll & WhatsApp push sync
 function setupMobileStickyBar() {
     const mobileBar = document.getElementById("mobile-sticky-bar");
     const heroSection = document.getElementById("hero");
+    const whatsappWidget = document.getElementById("whatsapp-widget");
     
     if (!mobileBar || !heroSection) return;
     
@@ -393,8 +394,10 @@ function setupMobileStickyBar() {
                 // Show sticky bar after user scrolls past the Hero section
                 if (scrollPosition > (heroHeight - 100)) {
                     mobileBar.classList.add("visible");
+                    if (whatsappWidget) whatsappWidget.classList.add("pushed");
                 } else {
                     mobileBar.classList.remove("visible");
+                    if (whatsappWidget) whatsappWidget.classList.remove("pushed");
                 }
                 isTicking = false;
             });
