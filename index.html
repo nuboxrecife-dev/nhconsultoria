@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Pastas Sanitárias | Natália Holanda Consultoria</title>
+    <meta name="description" content="Organize documentos e controles sanitários do seu restaurante, indústria, hospital ou laboratório com o Kit de Pastas Sanitárias desenvolvido pela nutricionista Natália Holanda.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📁</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-bar" id="reading-progress"></div>
+
+    <!-- Decorative Aurora Blobs -->
+    <div class="aurora-blob aurora-1"></div>
+    <div class="aurora-blob aurora-2"></div>
+    <div class="aurora-blob aurora-3"></div>
+
+    <!-- Header / Top Navigation with CTA & Theme Switcher -->
+    <header class="site-header">
+        <div class="header-container container">
+            <div class="logo">
+                <img src="assets/logo_original.jpeg" alt="Logo Natália Holanda" class="logo-img-src">
+            </div>
+            
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Alternar modo claro/escuro">
+                    <!-- Sun Icon (shows in Dark Mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (shows in Light Mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <a href="#" class="btn-cta btn-top-cta checkout-btn" id="btn-header-cta">
+                    QUERO MEU KIT
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- SECTION 1 - HERO -->
+        <section class="section-hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content animate-fade-right">
+                    <div class="badge-professional">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Material profissional para estabelecimentos e serviços de alimentação</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Sua empresa está preparada para uma fiscalização da Vigilância Sanitária?</h1>
+                    
+                    <p class="hero-subtitle">Organize documentos, registros e controles importantes do seu estabelecimento com um kit desenvolvido para facilitar sua rotina e ajudar sua empresa a estar mais preparada para as exigências sanitárias.</p>
+                    
+                    <div class="hero-cta-wrapper">
+                        <!-- Countdown Timer -->
+                        <div class="countdown-container inline-countdown" id="hero-countdown">
+                            <span class="countdown-dot"></span>
+                            <span class="countdown-label">Oferta promocional de lançamento expira em:</span>
+                            <span class="timer-value"><span class="minutes">15</span>m <span class="seconds">00</span>s</span>
+                        </div>
+                        
+                        <a href="#" class="btn-cta btn-large ripple checkout-btn" id="btn-hero-cta">
+                            QUERO MEU KIT POR R$ 59,90
+                        </a>
+                        <span class="cta-note">Acesso ao material após a confirmação do pagamento.</span>
+                    </div>
+                    
+                    <ul class="hero-trust-indicators">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Material prático</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Organização profissional</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Fácil aplicação</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Desenvolvido por nutricionista com experiência no setor</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="hero-visual animate-fade-left">
+                    <!-- Interactive 3D tilt container -->
+                    <div class="mockup-container tilt-interactive">
+                        <img src="assets/mockup_original.jpeg" alt="Kit de Pastas Sanitárias - Organização Oficial" class="mockup-img" loading="eager">
+                        <div class="mockup-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2 - PAIN / PROBLEM -->
+        <section class="section-pain section-padding" id="dor">
+            <div class="container">
+                <div class="section-header text-center animate-fade-up">
+                    <h2 class="section-title">Uma fiscalização pode acontecer quando você menos espera.</h2>
+                    <p class="section-subtitle-text max-width-md">Muitos estabelecimentos deixam para organizar documentos, registros e controles somente quando precisam apresentá-los.</p>
+                </div>
+                
+                <p class="pain-intro-text text-center max-width-lg animate-fade-up">
+                    O problema é que, durante uma fiscalização, procurar documentos de última hora, utilizar modelos improvisados ou não saber onde estão determinados registros pode gerar insegurança e dificultar o atendimento às solicitações da fiscalização.
+                </p>
+
+                <div class="pain-cards-grid stagger-container">
+                    <div class="pain-card animate-stagger-item">
+                        <div class="pain-card-icon-wrapper text-danger">
+                            <!-- File X / Cross Icon -->
+                            <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="9.5" y1="12.5" x2="14.5" y2="17.5"/><line x1="14.5" y1="12.5" x2="9.5" y2="17.5"/></svg>
+                        </div>
+                        <h3>Documentação desorganizada</h3>
+                        <p>Informações espalhadas em diferentes arquivos, pastas ou setores.</p>
+                    </div>
+
+                    <div class="pain-card animate-stagger-item">
+                        <div class="pain-card-icon-wrapper text-danger">
+                            <!-- Layout / No Pattern Icon -->
+                            <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                        <h3>Falta de padronização</h3>
+                        <p>Cada funcionário registra as informações de uma maneira diferente.</p>
+                    </div>
+
+                    <div class="pain-card animate-stagger-item">
+                        <div class="pain-card-icon-wrapper text-danger">
+                            <!-- Alert / Clock Icon -->
+                            <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Correria na fiscalização</h3>
+                        <p>Documentos precisam ser procurados justamente quando deveriam estar facilmente disponíveis.</p>
+                    </div>
+                </div>
+
+                <div class="pain-footer text-center animate-fade-up">
+                    <p class="pain-conclusion">Organização também faz parte de uma boa gestão sanitária.</p>
+                    <div class="pain-cta-box">
+                        <a href="#" class="btn-cta btn-medium checkout-btn" id="btn-pain-cta">
+                            QUERO SAIR DO IMPROVISO
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 - SOLUTION -->
+        <section class="section-solution section-padding" id="solucao">
+            <div class="container solution-grid">
+                <div class="solution-content animate-fade-right">
+                    <h2 class="section-title">Foi pensando nisso que criamos o Kit de Pastas Sanitárias.</h2>
+                    <p class="solution-text">Um material desenvolvido para ajudar restaurantes, indústrias, hospitais, laboratórios e outros estabelecimentos a organizar de maneira prática seus controles e documentos relacionados à rotina sanitária.</p>
+                    
+                    <div class="solution-highlight-card">
+                        <svg class="spark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <p>Você recebe uma estrutura pronta para começar a organizar sua empresa sem precisar criar tudo do zero.</p>
+                    </div>
+
+                    <p class="responsibility-disclaimer">
+                        <strong>Comunicação responsável:</strong> Tenha sua documentação mais organizada e esteja mais preparado para uma fiscalização sanitária.
+                    </p>
+
+                    <div class="solution-cta-wrapper">
+                        <a href="#" class="btn-cta btn-medium checkout-btn" id="btn-solution-cta">
+                            QUERO COMEÇAR A ORGANIZAR
+                        </a>
+                    </div>
+                </div>
+
+                <div class="solution-visual animate-fade-left">
+                    <div class="folders-visual-representation">
+                        <!-- Custom visual representing folder system -->
+                        <div class="folder-graphic-card">
+                            <div class="folder-tab">Pastas de Controle</div>
+                            <div class="folder-body">
+                                <ul class="folder-file-list">
+                                    <li>
+                                        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                        <span>Checklists Diários</span>
+                                    </li>
+                                    <li>
+                                        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                        <span>Controle de Higienização</span>
+                                    </li>
+                                    <li>
+                                        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                        <span>Registros de Temperatura</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="folder-graphic-card-back"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4 - WHAT CLIENT RECEIVES -->
+        <section class="section-features section-padding" id="o-que-recebe">
+            <div class="container">
+                <div class="section-header text-center animate-fade-up">
+                    <span class="section-tag font-alt">CONTEÚDO DO MATERIAL</span>
+                    <h2 class="section-title">O que você encontra no Kit</h2>
+                    <p class="section-subtitle-text max-width-md">Um compilado estruturado com foco na organização e facilidade no atendimento às normas.</p>
+                </div>
+
+                <div class="features-grid stagger-container">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">📁</div>
+                        <h4>Organização de documentos sanitários</h4>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">⚙️</div>
+                        <h4>Controles internos</h4>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">📝</div>
+                        <h4>Registros de rotina</h4>
+                    </div>
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">🎓</div>
+                        <h4>Organização de treinamentos</h4>
+                    </div>
+                    <!-- Feature Card 5 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">✨</div>
+                        <h4>Controle de higienização</h4>
+                    </div>
+                    <!-- Feature Card 6 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">📥</div>
+                        <h4>Controle de recebimento de mercadorias</h4>
+                    </div>
+                    <!-- Feature Card 7 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">🌡️</div>
+                        <h4>Registros de temperatura</h4>
+                    </div>
+                    <!-- Feature Card 8 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">👥</div>
+                        <h4>Organização de documentos de colaboradores</h4>
+                    </div>
+                    <!-- Feature Card 9 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">🚚</div>
+                        <h4>Controle de fornecedores</h4>
+                    </div>
+                    <!-- Feature Card 10 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">📚</div>
+                        <h4>Documentação de boas práticas</h4>
+                    </div>
+                    <!-- Feature Card 11 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">💼</div>
+                        <h4>Modelos para organização administrativa sanitária</h4>
+                    </div>
+                    <!-- Feature Card 12 -->
+                    <div class="feature-card animate-stagger-item">
+                        <div class="feature-icon-wrapper">🛡️</div>
+                        <h4>Materiais de apoio para fiscalização</h4>
+                    </div>
+                </div>
+
+                <div class="features-disclaimer text-center max-width-md animate-fade-up">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    <p>O conteúdo poderá variar conforme a versão do kit e deve ser adaptado à realidade e às exigências aplicáveis a cada estabelecimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5 - FOR WHOM IT IS -->
+        <section class="section-target section-padding" id="para-quem">
+            <div class="container">
+                <div class="section-header text-center animate-fade-up">
+                    <span class="section-tag font-alt">PÚBLICO-ALVO</span>
+                    <h2 class="section-title">Esse material foi desenvolvido para quem precisa manter organização e controle.</h2>
+                </div>
+
+                <div class="target-grid stagger-container">
+                    <!-- Target Card 1 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Restaurantes e serviços de alimentação</h3>
+                    </div>
+                    <!-- Target Card 2 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                        </div>
+                        <h3>Padarias e cafeterias</h3>
+                    </div>
+                    <!-- Target Card 3 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                        </div>
+                        <h3>Hospitais e clínicas</h3>
+                    </div>
+                    <!-- Target Card 4 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"/><path d="M12 2C6.5 2 4 6 4 11c0 3.5 2.5 5.5 8 5.5s8-2 8-5.5c0-5-2.5-9-8-9z"/></svg>
+                        </div>
+                        <h3>Laboratórios</h3>
+                    </div>
+                    <!-- Target Card 5 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 21H2V3l7 4 5-4 8 4v18z"/><path d="M19 17h1M19 13h1M14 17h1M14 13h1"/></svg>
+                        </div>
+                        <h3>Indústrias de alimentos</h3>
+                    </div>
+                    <!-- Target Card 6 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Cozinhas industriais</h3>
+                    </div>
+                    <!-- Target Card 7 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Empreendedores do setor de alimentos</h3>
+                    </div>
+                    <!-- Target Card 8 -->
+                    <div class="target-card animate-stagger-item">
+                        <div class="target-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                        </div>
+                        <h3>Responsáveis técnicos e gestores</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6 - IDENTIFICATION TRIGGER (DARK & ELEGANT BACKGROUND) -->
+        <section class="section-dark-trigger section-padding text-center">
+            <div class="container max-width-md animate-fade-up">
+                <h2 class="dark-trigger-title">Se a fiscalização chegasse hoje, você saberia exatamente onde estão todos os seus documentos?</h2>
+                <p class="dark-trigger-text text-muted-light">Essa é uma pergunta simples, mas que muitos empresários só fazem quando a fiscalização já está acontecendo.</p>
+                <p class="dark-trigger-subtext">O Kit de Pastas Sanitárias foi criado para ajudar você a sair do improviso e construir uma rotina mais organizada.</p>
+                
+                <div class="dark-trigger-cta">
+                    <a href="#" class="btn-cta btn-large btn-gold checkout-btn" id="btn-trigger-cta">
+                        QUERO ORGANIZAR MINHA EMPRESA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7 - AUTHORITY -->
+        <section class="section-authority section-padding" id="autoridade">
+            <div class="container authority-grid">
+                <div class="authority-image-wrapper animate-fade-right">
+                    <div class="photo-card">
+                        <img src="assets/natalia_original.jpeg" alt="Natália Holanda - Nutricionista e Consultora" class="specialist-img" loading="lazy">
+                        <div class="photo-accent-frame"></div>
+                    </div>
+                </div>
+
+                <div class="authority-content animate-fade-left">
+                    <span class="section-tag font-alt">QUEM CRIOU O MATERIAL</span>
+                    <h2 class="section-title">Quem desenvolveu este material?</h2>
+                    
+                    <h3 class="specialist-name">Natália Holanda</h3>
+                    <p class="specialist-title">Nutricionista | Consultora</p>
+                    
+                    <div class="specialist-bio">
+                        <p>Há <strong>14 anos ajudando a transformar sonhos em restaurantes e indústrias</strong>, acompanhando empresários na estruturação, organization e profissionalização de seus negócios.</p>
+                        <p>Ao longo dessa trajetória, Natália Holanda adquiriu experiência prática com estabelecimentos do setor de alimentos, processos, organização sanitária e preparação documental.</p>
+                        <p>O Kit de Pastas Sanitárias reúne parte dessa experiência em uma solução prática para empresários que desejam melhorar a organização de seus estabelecimentos.</p>
+                    </div>
+
+                    <blockquote class="specialist-quote">
+                        <p>“Organização não deve começar quando a fiscalização chega. Ela precisa fazer parte da rotina da empresa.”</p>
+                        <cite>— Natália Holanda</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7.5 - TESTIMONIALS CAROUSEL -->
+        <section class="section-testimonials section-padding" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center animate-fade-up">
+                    <span class="section-tag font-alt">DEPOIMENTOS</span>
+                    <h2 class="section-title">Quem já usa e aprova a organização do Kit</h2>
+                    <p class="section-subtitle-text max-width-md">Veja relatos reais de proprietários e profissionais que transformaram suas rotinas documentais.</p>
+                </div>
+                
+                <div class="testimonials-slider-wrapper animate-scale-up">
+                    <div class="testimonials-slider" id="testimonials-slider">
+                        
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-content-box">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Sempre tive receio de fiscalizações por causa da papelada. Com o Kit, consegui organizar tudo em pastas separadas por assunto. Quando a Vigilância chegou no mês passado, encontrei os registros de temperatura em segundos. A fiscal elogiou a organização."</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">RC</div>
+                                    <div class="user-info">
+                                        <h4 class="user-name">Ricardo Costa</h4>
+                                        <p class="user-role">Dono de Restaurante - São Paulo/SP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content-box">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Como nutricionista e consultora, o Kit me poupou dezenas de horas de trabalho criando modelos do zero para meus clientes. Os modelos são muito práticos de adaptar para cada realidade. Uso e recomendo para meus colegas de profissão."</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">MA</div>
+                                    <div class="user-info">
+                                        <h4 class="user-name">Mariana Alves</h4>
+                                        <p class="user-role">Nutricionista Consultora - Recife/PE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content-box">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <p class="testimonial-text">"Gerenciar uma cozinha industrial requer controles rígidos. Padronizar as planilhas de recebimento e o cronograma de higienização com o Kit trouxe muito mais clareza para a minha equipe operacional no dia a dia."</p>
+                                <div class="testimonial-user">
+                                    <div class="user-avatar">FS</div>
+                                    <div class="user-info">
+                                        <h4 class="user-name">Fernando Silva</h4>
+                                        <p class="user-role">Gerente de Cozinha Industrial - Belo Horizonte/MG</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Slider Navigation Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" id="slider-prev-btn" aria-label="Depoimento Anterior">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <div class="slider-dots" id="slider-dots-container">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-arrow next" id="slider-next-btn" aria-label="Próximo Depoimento">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8 - COMPARISON -->
+        <section class="section-comparison section-padding" id="comparativo">
+            <div class="container">
+                <div class="section-header text-center animate-fade-up">
+                    <h2 class="section-title">Quanto custa continuar improvisando?</h2>
+                    <p class="section-subtitle-text max-width-md">Analise o impacto real de manter a desorganização versus estruturar seus controles.</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <!-- Column Left: Sem Organização -->
+                    <div class="comparison-column pain-column animate-fade-right">
+                        <div class="column-header">
+                            <h3>SEM ORGANIZAÇÃO</h3>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>
+                                <svg class="cross-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Documentos espalhados</span>
+                            </li>
+                            <li>
+                                <svg class="cross-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Informações difíceis de encontrar</span>
+                            </li>
+                            <li>
+                                <svg class="cross-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Registros sem padrão</span>
+                            </li>
+                            <li>
+                                <svg class="cross-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Mais tensão durante uma fiscalização</span>
+                            </li>
+                            <li>
+                                <svg class="cross-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Tempo perdido criando controles do zero</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column Right: Com o Kit -->
+                    <div class="comparison-column success-column animate-fade-left">
+                        <div class="column-header">
+                            <h3>COM O KIT</h3>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>
+                                <svg class="check-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Estrutura organizada</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Modelos prontos</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Registros padronizados</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Mais facilidade para localizar informações</span>
+                            </li>
+                            <li>
+                                <svg class="check-icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Mais profissionalismo na rotina da empresa</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9 - OFFER -->
+        <section class="section-offer section-padding" id="oferta">
+            <div class="container text-center max-width-md">
+                <div class="offer-box animate-scale-up">
+                    <span class="offer-tag">OFERTA ESPECIAL</span>
+                    <h2 class="offer-title">Tenha acesso ao Kit de Pastas Sanitárias</h2>
+                    
+                    <div class="pricing-wrapper">
+                        <!-- Countdown Timer in Offer -->
+                        <div class="countdown-container inline-countdown" id="offer-countdown">
+                            <span class="countdown-dot"></span>
+                            <span class="countdown-label">Garanta o valor promocional antes que expire:</span>
+                            <span class="timer-value"><span class="minutes">15</span>m <span class="seconds">00</span>s</span>
+                        </div>
+                        
+                        <span class="payment-badge">Pagamento único</span>
+                        <div class="price-value">R$ 59,90</div>
+                        <p class="price-subtitle">Um investimento acessível para começar a organizar documentos e controles importantes da sua empresa.</p>
+                    </div>
+
+                    <div class="offer-cta-wrapper">
+                        <a href="#" class="btn-cta btn-xlarge pulse checkout-btn" id="btn-offer-cta">
+                            QUERO MEU KIT AGORA
+                        </a>
+                    </div>
+
+                    <ul class="offer-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Compra rápida</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Material prático</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Acesso digital</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Desenvolvido por profissional com 14 anos de experiência</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 10 - COST-BENEFIT TRIGGER -->
+        <section class="section-benefit-trigger section-padding text-center">
+            <div class="container max-width-sm animate-fade-up">
+                <h2 class="benefit-title">Menos de R$ 2 por dia durante apenas um mês.</h2>
+                <p class="benefit-text">Por <strong>R$ 59,90</strong>, você recebe um material desenvolvido para poupar tempo na organização e ajudar a estruturar uma rotina documental mais profissional.</p>
+                
+                <div class="benefit-highlight-box">
+                    <p>O valor do Kit é pequeno. O valor de estar organizado pode ser enorme para sua empresa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 11 - FAQ (COLLAPSIBLE ACCORDION) -->
+        <section class="section-faq section-padding" id="faq">
+            <div class="container max-width-md">
+                <div class="section-header text-center animate-fade-up">
+                    <span class="section-tag font-alt">DÚVIDAS FREQUENTES</span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq-accordion stagger-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item animate-stagger-item" id="faq-1">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span>O Kit serve apenas para restaurantes?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1" hidden>
+                            <p>Não. O material pode ser utilizado como base de organização por restaurantes, serviços de alimentação, hospitais, laboratórios, indústrias e outros estabelecimentos que tenham rotinas e controles sanitários.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" id="faq-2">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span>O material garante aprovação em uma fiscalização?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2" hidden>
+                            <p>Não. Nenhum material pode garantir aprovação, pois cada estabelecimento possui características próprias e está sujeito às exigências dos órgãos responsáveis. O objetivo do Kit é auxiliar na organização e preparação documental.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" id="faq-3">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span>Preciso ser nutricionista para utilizar?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" hidden>
+                            <p>Não. O material foi desenvolvido para facilitar a rotina de empresários, gestores, responsáveis técnicos e equipes.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" id="faq-4">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span>O material é digital?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4" hidden>
+                            <p>Sim. O cliente recebe acesso aos materiais disponibilizados no Kit.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item" id="faq-5">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span>Posso adaptar os documentos para minha empresa?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-5" hidden>
+                            <p>Sim. Os modelos devem ser adaptados de acordo com a realidade do estabelecimento e as exigências aplicáveis à atividade.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item" id="faq-6">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span>Quanto custa?</span>
+                            <span class="faq-icon-chevron"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-6" hidden>
+                            <p>O valor promocional é de <strong>R$ 59,90</strong>, pagamento único.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 12 - FINAL CTA (HIGH CONTRAST / PREMIUM) -->
+        <section class="section-final-cta section-padding text-center">
+            <div class="container max-width-md animate-fade-up">
+                <h2 class="final-cta-title">Não espere a fiscalização chegar para começar a organizar sua empresa.</h2>
+                <p class="final-cta-subtitle">Comece agora a estruturar seus documentos e controles com um material desenvolvido por quem conhece a realidade do setor.</p>
+                
+                <div class="final-price-box">
+                    <span class="final-price-label">INVESTIMENTO ÚNICO</span>
+                    <div class="final-price-value">R$ 59,90</div>
+                </div>
+
+                <div class="final-cta-wrapper">
+                    <a href="#" class="btn-cta btn-xlarge btn-gold checkout-btn" id="btn-final-cta">
+                        QUERO GARANTIR MEU KIT
+                    </a>
+                </div>
+
+                <div class="final-author-info">
+                    <p class="author-name">Desenvolvido por Natália Holanda — Nutricionista e Consultora</p>
+                    <p class="author-tagline">14 anos transformando sonhos em restaurantes e indústrias.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container text-center">
+            <p>&copy; 2026 Natália Holanda Consultoria. Todos os direitos reservados.</p>
+            <p class="footer-legal">A organização de documentos é um facilitador operacional. A aprovação da Vigilância Sanitária depende do cumprimento das normas em sua totalidade no estabelecimento.</p>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY BOTTOM BAR -->
+    <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+        <div class="mobile-bar-container">
+            <div class="mobile-bar-info">
+                <span class="mobile-bar-product">Kit Sanitário</span>
+                <span class="mobile-bar-price">R$ 59,90</span>
+            </div>
+            <a href="#" class="btn-cta btn-small checkout-btn" id="btn-mobile-sticky">
+                QUERO AGORA
+            </a>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOATING ACTIVE WIDGET -->
+    <div class="whatsapp-widget-container" id="whatsapp-widget">
+        <!-- Chat Balloon (Pop-up message) -->
+        <div class="whatsapp-chat-balloon" id="whatsapp-balloon">
+            <div class="chat-header">
+                <div class="chat-avatar-wrapper">
+                    <img src="assets/natalia_original.jpeg" alt="Natália Holanda" class="chat-avatar-img">
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="chat-user-details">
+                    <span class="chat-user-name">Natália Holanda</span>
+                    <span class="chat-user-status">Online</span>
+                </div>
+                <button class="chat-close-btn" id="chat-close-btn" aria-label="Fechar suporte">&times;</button>
+            </div>
+            <div class="chat-body">
+                <!-- Typing animation indicator -->
+                <div class="chat-bubble-message typing" id="typing-indicator">
+                    <div class="typing-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <!-- Actual Message -->
+                <div class="chat-bubble-message" id="chat-message" style="display: none;">
+                    Olá! Sou a Natália Holanda. Tem alguma dúvida sobre o Kit de Pastas Sanitárias de R$ 59,90 ou quer saber se ele é aplicável ao seu negócio? Vamos conversar!
+                </div>
+            </div>
+            <div class="chat-footer">
+                <a href="#" class="btn-chat-connect" id="whatsapp-chat-btn" target="_blank" rel="noopener noreferrer">
+                    <span>Conversar no WhatsApp</span>
+                    <svg class="chat-send-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Primary Trigger Bubble -->
+        <button class="whatsapp-bubble-trigger" id="whatsapp-trigger" aria-label="Abrir suporte do WhatsApp">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.858.002-2.637-1.026-5.116-2.893-6.985C16.743 1.89 14.27 .862 11.637.86c-5.438 0-9.861 4.419-9.863 9.86-.001 1.704.469 3.371 1.362 4.877L2.122 21.03l5.525-1.45c-.524-.044.972-.53 1 .004zM18.06 14.85c-.328-.164-1.942-.958-2.242-1.068-.3-.11-.519-.164-.737.164-.219.328-.848 1.068-1.039 1.286-.192.219-.383.246-.71.082-.328-.164-1.386-.51-2.64-1.628-.975-.87-1.633-1.945-1.824-2.274-.192-.328-.02-.505.143-.668.147-.147.328-.383.493-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.737-1.777-1.011-2.433-.267-.643-.539-.556-.737-.566-.19-.01-.41-.01-.628-.01-.219 0-.574.082-.875.41-.3.328-1.148 1.12-1.148 2.731 0 1.611 1.175 3.17 1.339 3.389.164.219 2.311 3.529 5.597 4.947.781.338 1.391.54 1.867.691.785.249 1.5.214 2.064.13.629-.094 1.942-.793 2.215-1.559.273-.766.273-1.422.192-1.559-.082-.138-.3-.219-.628-.383z"/>
+          </svg>
+          <span class="unread-badge" id="whatsapp-unread">1</span>
+      </button>
+  </div>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
