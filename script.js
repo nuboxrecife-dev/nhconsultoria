@@ -3,6 +3,7 @@
    ========================================================================== */
 
 // 1. CONFIGURATIONS
+// SUBSTITUA 'https://pay.hotmart.com/exemplo' pelo link de checkout real da sua plataforma (Hotmart, Kiwify, etc.)
 const CHECKOUT_URL = "https://pay.hotmart.com/exemplo"; 
 const WHATSAPP_NUMBER = "5581985593191";             // WhatsApp Real fornecido pelo usuário
 const WHATSAPP_MESSAGE = "Olá, gostaria de saber mais sobre o Kit de Pastas Sanitárias de R$ 59,90.";
@@ -22,11 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     setupScrollAnimations();
 });
 
-// Setup all checkout buttons to point to CHECKOUT_URL
+// Setup all checkout buttons to point to CHECKOUT_URL and track analytics events
 function setupCheckoutLinks() {
     const checkoutButtons = document.querySelectorAll(".checkout-btn");
     checkoutButtons.forEach(button => {
         button.href = CHECKOUT_URL;
+        
+        // Dispara o rastreamento do Pixel (InitiateCheckout) se o script do Pixel estiver ativo
+        button.addEventListener("click", () => {
+            if (typeof fbq === "function") {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Kit de Pastas Sanitárias',
+                    value: 59.90,
+                    currency: 'BRL'
+                });
+            }
+        });
     });
 }
 
