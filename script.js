@@ -3,8 +3,7 @@
    ========================================================================== */
 
 // 1. CONFIGURATIONS
-// SUBSTITUA 'https://pay.hotmart.com/exemplo' pelo link de checkout real da sua plataforma (Hotmart, Kiwify, etc.)
-const CHECKOUT_URL = "https://pay.hotmart.com/exemplo"; 
+const CHECKOUT_URL = "https://mpago.la/1mRE2K4"; // Link Oficial de Checkout Mercado Pago
 const WHATSAPP_NUMBER = "5511961778917";             // WhatsApp Real (11) 96177-8917
 const WHATSAPP_MESSAGE = "Olá, gostaria de saber mais sobre o Kit de Pastas Sanitárias de R$ 59,90.";
 
