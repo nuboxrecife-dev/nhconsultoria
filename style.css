@@ -2749,55 +2749,319 @@ body.dark-theme .bonus-price-crossed strong {
     transform: translateY(0);
 }
 
-/* Extremely Small Mobile Screens (max-width: 480px) */
-@media (max-width: 480px) {
-    .logo-img-src {
-        max-height: 38px;
-    }
-    
-    .btn-top-cta {
-        padding: 10px 18px;
-        font-size: 10px;
-    }
-    
-    .header-actions {
-        gap: 8px;
-    }
-    
-    .hero-title {
-        font-size: 26px;
-    }
-    
-    .section-title {
-        font-size: 24px;
-    }
-    
-    .price-value {
-        font-size: 48px;
-    }
-    
-    .final-price-value {
-        font-size: 38px;
-    }
-    
-    .mobile-bar-container {
-        padding: 0;
-    }
-    
+/* ==========================================================================
+   ADVANCED MOBILE & SMARTPHONE RESPONSIVENESS (PERFECTED UX)
+   ========================================================================== */
+
+/* Tablet & Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
     .section-padding {
-        padding-top: 36px;
-        padding-bottom: 36px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /* Headings & Typography */
+    .hero-title {
+        font-size: clamp(24px, 6.2vw, 34px);
+        line-height: 1.25;
+        margin-bottom: 14px;
+    }
+
+    .hero-subtitle {
+        font-size: 14.5px;
+        line-height: 1.55;
+        margin-bottom: 22px;
+    }
+
+    .section-title {
+        font-size: clamp(21px, 5.2vw, 28px);
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* CTAs on mobile */
+    .hero-cta-wrapper .btn-cta,
+    .pain-cta-box .btn-cta,
+    .kit-cta-btn-wrap .btn-cta,
+    .dark-trigger-cta .btn-cta,
+    .offer-cta-wrapper .btn-cta,
+    .final-cta-wrapper .btn-cta {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 16px 18px;
+        font-size: 13.5px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Hero Trust Indicators on Mobile */
+    .hero-trust-indicators {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .hero-trust-indicators li {
+        font-size: 12px;
+        gap: 6px;
+        line-height: 1.3;
+    }
+
+    /* Target Audience Cards Grid */
+    .target-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .target-card {
+        padding: 16px 12px;
+    }
+
+    .target-card h3 {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+
+    /* Comparison Grid */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .comparison-column {
+        padding: 22px 18px;
+    }
+
+    /* Offer Box on Mobile */
+    .offer-box {
+        padding: 30px 18px 24px;
+    }
+
+    .bonus-highlight-box {
+        padding: 14px 14px;
+    }
+
+    .bonus-title {
+        font-size: 14.5px;
+    }
+
+    .bonus-description {
+        font-size: 12.5px;
+    }
+
+    .price-value {
+        font-size: 46px;
+    }
+
+    .offer-features li {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    /* Guarantee on Mobile */
+    .guarantee-card {
+        padding: 26px 18px;
+    }
+
+    .guarantee-title {
+        font-size: 21px;
+    }
+
+    .guarantee-text {
+        font-size: 13.5px;
+    }
+
+    /* Authority on Mobile */
+    .specialist-img {
+        max-width: 240px;
+        margin: 0 auto;
     }
 }
 
-/* Ultra Narrow Screens like iPhone SE 1st Gen (max-width: 400px) */
-@media (max-width: 400px) {
+/* Smartphone Portrait Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .section-padding {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    /* Header Compact */
+    .logo-img-src {
+        max-height: 34px;
+    }
+
     .btn-top-cta {
         padding: 8px 14px;
-        font-size: 9px;
+        font-size: 9.5px;
     }
-    .logo-img-src {
-        max-height: 30px;
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    /* Typography */
+    .hero-title {
+        font-size: 23px;
+    }
+
+    .hero-subtitle {
+        font-size: 13.5px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    /* Countdown Inline Container */
+    .countdown-container.inline-countdown {
+        padding: 8px 12px;
+        flex-direction: column;
+        gap: 4px;
+        text-align: center;
+    }
+
+    .countdown-label {
+        font-size: 11px;
+    }
+
+    /* Kit Content Cards Mobile */
+    .kit-folders-grid {
+        gap: 14px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .kit-folder-card {
+        padding: 20px 16px 18px;
+    }
+
+    .folder-number {
+        font-size: 10px;
+    }
+
+    .folder-category-tag {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+
+    .folder-badge-format {
+        font-size: 9.5px;
+        padding: 2px 5px;
+    }
+
+    .kit-folder-icon-wrapper {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 14px;
+    }
+
+    .kit-folder-title {
+        font-size: 16px;
+        min-height: auto;
+        margin-bottom: 6px;
+    }
+
+    .kit-folder-desc {
+        font-size: 12.5px;
+        line-height: 1.48;
+        margin-bottom: 14px;
+    }
+
+    .kit-folder-highlights {
+        padding-top: 10px;
+        gap: 6px;
+    }
+
+    .kit-folder-highlights li {
+        font-size: 11.5px;
+        line-height: 1.35;
+    }
+
+    .kit-summary-badge {
+        font-size: 11.5px;
+        padding: 6px 12px;
+    }
+
+    /* Target Cards on Small Screens */
+    .target-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .target-card {
+        padding: 12px 8px;
+    }
+
+    .target-card h3 {
+        font-size: 11.5px;
+    }
+
+    /* Pain Cards */
+    .pain-card {
+        padding: 20px 16px;
+    }
+
+    .pain-card h3 {
+        font-size: 15px;
+    }
+
+    .pain-card p {
+        font-size: 12.5px;
+    }
+
+    /* Final Price */
+    .price-value {
+        font-size: 42px;
+    }
+
+    .final-price-value {
+        font-size: 34px;
+    }
+
+    .mobile-sticky-bar {
+        padding: 8px 14px;
+    }
+
+    .mobile-bar-product {
+        font-size: 11px;
+    }
+
+    .mobile-bar-price {
+        font-size: 14px;
+    }
+}
+
+/* Ultra Narrow Screens (max-width: 360px) */
+@media (max-width: 360px) {
+    .hero-trust-indicators {
+        grid-template-columns: 1fr;
+    }
+
+    .target-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-top-cta {
+        padding: 6px 10px;
+        font-size: 9px;
     }
 }
 
