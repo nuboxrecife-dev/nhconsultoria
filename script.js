@@ -4,7 +4,7 @@
 
 // 1. CONFIGURATIONS
 const CHECKOUT_URL = "https://mpago.la/1mRE2K4"; // Link Oficial de Checkout Mercado Pago
-const WHATSAPP_NUMBER = "5511961778917";             // WhatsApp Real (11) 96177-8917
+const WHATSAPP_NUMBER = "5581985593191";             // WhatsApp Oficial (81) 98559-3191
 const WHATSAPP_MESSAGE = "Olá, gostaria de saber mais sobre o Kit de Pastas Sanitárias de R$ 59,90.";
 
 // 2. INITIALIZE PAGE
