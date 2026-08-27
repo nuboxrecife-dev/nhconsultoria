@@ -27,6 +27,8 @@ function setupCheckoutLinks() {
     const checkoutButtons = document.querySelectorAll(".checkout-btn");
     checkoutButtons.forEach(button => {
         button.href = CHECKOUT_URL;
+        button.setAttribute("target", "_blank");
+        button.setAttribute("rel", "noopener noreferrer");
         
         // Dispara o rastreamento do Pixel (InitiateCheckout) se o script do Pixel estiver ativo
         button.addEventListener("click", () => {
